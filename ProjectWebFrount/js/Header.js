@@ -101,7 +101,7 @@ function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, c
     showSlides(slideIndex);
     setInterval(() => {
         plusSlides(1);
-    }, 8000);
+    }, 9000);
 }
 
 //********************* */ End slider
