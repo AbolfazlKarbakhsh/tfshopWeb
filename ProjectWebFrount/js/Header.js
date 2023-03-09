@@ -4,23 +4,23 @@
 
 var gigaCloseNumber = 0;
 
-function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, closePanel) {
+function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, closePanel,attribute ="width") {
 
     var GigaMenuFother = document.querySelector(closeBtn);
     var GigaMenu = document.querySelector(openBtn);
 
     if (gigaCloseNumber == 0) {
-        GigaMenuFother.style.cssText = `width:${widthBtnOrFother}`;
-        GigaMenu.style.cssText = `width:${widthPanel}`;
+        GigaMenuFother.style.cssText = `${attribute}:${widthBtnOrFother}`;
+        GigaMenu.style.cssText = `${attribute}:${widthPanel}`;
         gigaCloseNumber = 1;
     }
 
     else if (gigaCloseNumber === 1) {
         function close() {
-            GigaMenu.style.cssText = `width:${closeFother}`;
+            GigaMenu.style.cssText = `${attribute}:${closeFother}`;
 
             setTimeout(() => {
-                GigaMenuFother.style.cssText = `width:${closePanel}`;
+                GigaMenuFother.style.cssText = `${attribute}:${closePanel}`;
             }, 400);
             gigaCloseNumber = 0;
         }
