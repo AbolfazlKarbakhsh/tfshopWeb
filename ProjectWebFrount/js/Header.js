@@ -4,7 +4,7 @@
 
 var gigaCloseNumber = 0;
 
-function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, closePanel,attribute ="width") {
+function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, closePanel, attribute = "width") {
 
     var GigaMenuFother = document.querySelector(closeBtn);
     var GigaMenu = document.querySelector(openBtn);
@@ -13,9 +13,7 @@ function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, c
         GigaMenuFother.style.cssText = `${attribute}:${widthBtnOrFother}`;
         GigaMenu.style.cssText = `${attribute}:${widthPanel}`;
         gigaCloseNumber = 1;
-    }
-
-    else if (gigaCloseNumber === 1) {
+    } else if (gigaCloseNumber === 1) {
         function close() {
             GigaMenu.style.cssText = `${attribute}:${closeFother}`;
 
@@ -31,7 +29,6 @@ function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, c
     }, false);
 
 }
-
 
 //#endregion
 
@@ -118,6 +115,7 @@ function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, c
         var slidejsTag = document.getElementsByClassName("slidejs");
         var indexSlide = 0;
         var numberinterval = 8000;
+
         function nextSlide() {
 
             if (indexSlide < 0) {
@@ -177,6 +175,7 @@ function visibility(Panel, click, animateIn, secIn, animateOut, secOut, eventIn,
         function visible(tag, i) {
             tag[i].style.cssText = `animation: ${animateIn} ${secIn}s;`;
         }
+
         function hideVisible(tag) {
             for (let i = 1; i <= tag.length; i++) {
                 tag[i - 1].style.cssText = `animation: ${animateOut} ${secOut}s;transform:scale(0)`;
@@ -214,6 +213,7 @@ function sliderMain(next, prev, tag) {
         slidejsNumber -= 1;
         var slidejsTag = document.getElementsByClassName(tag);
         var indexSlide = 0;
+
         function nextSlide() {
 
             if (indexSlide < 0) {
@@ -293,7 +293,11 @@ function getVals() {
     let slide1 = parseFloat(slides[0].value);
     let slide2 = parseFloat(slides[1].value);
     // Neither slider will clip the other, so make sure we determine which is larger
-    if (slide1 > slide2) { let tmp = slide2; slide2 = slide1; slide1 = tmp; }
+    if (slide1 > slide2) {
+        let tmp = slide2;
+        slide2 = slide1;
+        slide1 = tmp;
+    }
 
     let displayElement = document.getElementsByClassName("rangeValues")[0];
     //innerHTML property allows Javascript code to manipulate a website being displayed
@@ -318,35 +322,61 @@ window.onload = function () {
 
 //#endregion
 
-//#region class Color
-function Activer(ftag,chtag){
+//#region addTag
+function addTag(CSearch, CTag,CInput,error) {
+    let tagInp = document.querySelector(CInput);
+    let err = document.querySelector(error);
 
-    var route = ftag+" "+chtag;
+
+    if(tagInp.value.length > 3){
+        let FotherTag = document.querySelector(CSearch);
+
+        let value = document.createTextNode(tagInp.value);
+        let Tag = document.createElement(CTag);
+    
+        Tag.appendChild(value);
+        FotherTag.appendChild(Tag);
+        tagInp.value = "";
+        err.style.cssText = "display:none;";
+
+    }
+    else{
+        console.log(err);
+        err.style.cssText = "display:block;";
+    }
+}
+//#endregion
+
+//#region class adder
+
+function Activer(ftag, chtag) {
+
+    var route = ftag + " " + chtag;
 
     var tag = document.querySelectorAll(route);
-    tag.forEach(function(item,index,ary){
-        item.addEventListener("click",() => {
+    tag.forEach(function (item, index, ary) {
+        item.addEventListener("click", () => {
             revers(item);
         });
     });
-    
-    function revers(ab){
+
+    function revers(ab) {
         removeClass();
         addClass(ab);
     }
 
-    function addClass(tags){
+    function addClass(tags) {
         tags.classList = "active";
 
     }
 
-    function removeClass(){
-        tag.forEach(function(item,index,ary){
+    function removeClass() {
+        tag.forEach(function (item, index, ary) {
             console.log(item);
-            item.classList ="";
+            item.classList = "";
         });
     }
     console.log(tag);
 }
-Activer(".jsActive","li");
+Activer(".jsActive", "li");
 //#endregion
