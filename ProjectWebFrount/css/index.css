@@ -2553,6 +2553,7 @@ p {
     border-radius: 10px;
     color: #000 !important;
     margin: 10px 0;
+    padding:5px 20px;
     overflow: auto !important;
     visibility: inherit;
 }
