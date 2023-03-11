@@ -4,12 +4,15 @@
 var gigaCloseNumber = 0;
 
 function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, closePanel, attribute = "width") {
-    var GigaMenuFother = document.querySelector(closeBtn);
-    var GigaMenu = document.querySelector(openBtn);
+    const GigaMenuFother = document.querySelector(closeBtn);
+    const GigaMenu = document.querySelector(openBtn);
+    const body = document.querySelector("body");
+
 
     if (gigaCloseNumber == 0) {
         GigaMenuFother.style.cssText = `${attribute}:${widthBtnOrFother}`;
         GigaMenu.style.cssText = `${attribute}:${widthPanel}`;
+        body.style.overflow = "hidden";
         gigaCloseNumber = 1;
     } else if (gigaCloseNumber === 1) {
         function close() {
@@ -17,6 +20,7 @@ function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, c
 
             setTimeout(() => {
                 GigaMenuFother.style.cssText = `${attribute}:${closePanel}`;
+                body.style.overflow = "auto";
             }, 400);
             gigaCloseNumber = 0;
 

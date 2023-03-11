@@ -249,6 +249,23 @@ a {
 }
 
 
+/* animation css  */
+@keyframes opacity {
+    0%   {opacity: 0;}
+    100% {opacity: 100%;}
+  }
+
+  @keyframes scale {
+    0%   {scale: 0;}
+    60%   {scale: 1.2;}
+    100% {scale: 1;}
+  }
+
+  @keyframes scale-out {
+    100% {scale: 1;}
+    60%   {scale: 1.2;}
+    0%   {scale: 0;}
+  }
 /* scrool bar */
 
 
@@ -384,6 +401,7 @@ a {
     padding: 2px 15px 2px 15px;
     margin: 2px;
     width: 100%;
+    cursor: pointer;
 }
 
 .searchInp span , .searchInp2 span{
@@ -1078,7 +1096,7 @@ a {
 
 @media (max-width:992px) {
     .item-slider {
-        width: 45%;
+        width: 25%;
     }
     .item-slider2 {
         width: 30% !important;
@@ -1897,6 +1915,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
         cursor: pointer;
         display: block !important;
     }
+
+    .close4 {
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
     .modalShow {
         background-color: white;
         z-index: 999;
@@ -2541,7 +2565,6 @@ p {
 
 
 /* modal style */
-
 .modal-fother {
     position: fixed;
     top: 0;
@@ -2552,7 +2575,10 @@ p {
     display: flex;
     justify-content: center;
     visibility: hidden;
+    animation-name: opacity;
+    animation-duration: 0.8s;
 }
+
 
 .modal-child {
     position: fixed;
@@ -2563,38 +2589,41 @@ p {
     margin: 10px 0;
     padding:5px 20px;
     overflow: auto !important;
-    visibility: inherit;
+    visibility: hidden ;
+    animation-name: scale;
+    animation-duration: 2s;
+
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:1440px) {
     .modal-size-main ,.modal-size-main2{
         width: 90%;
+        height: 95%;
+
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1440px) {
     .modal-size-main , .modal-size-main2{
         width: 55%;
+        height: auto ;
+
     }
 }
 
-@media (max-height:576px) {
+/* @media (max-height:576px) {
     .modal-size-main  {
-        height: 95%;
     }
    
 }
 
-@media (max-height:992px) {
+@media (max-height:960px) {
     .modal-size-main {
-        height: 95%;
     }
 
-}
+} */
 
-.modal-size-main2{
- height: auto;
-}
+
 
 .modal-form {
     padding: 10px 10px;
