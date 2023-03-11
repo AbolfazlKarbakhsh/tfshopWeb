@@ -296,7 +296,7 @@ a {
 }
 
 .boxShadow {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
 }
 
 .boxShadow1 {
@@ -399,7 +399,8 @@ a {
     border-radius: 15px 0 0px 15px;
     border-right: 0;
     padding: 2px 15px 2px 15px;
-    margin: 2px;
+    margin:  2px;
+    margin-bottom:3px ;
     width: 100%;
     cursor: pointer;
 }
@@ -1055,6 +1056,31 @@ a {
     position: relative;
 }
 
+.item-slider8 {
+    width: 250px!important;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+    box-shadow: 0 0 7px rgb(0 0 0 / 10%);
+    text-align: right;
+    padding: 10px !important;
+    margin-bottom: 10px;
+}
+
+.overflow1{
+    overflow: scroll;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+
+}
+.content-box{
+    width: 100%;
+    overflow-x: scroll ; 
+    white-space: nowrap;
+}
+
 .item {
     width: 25%;
     /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
@@ -1076,10 +1102,16 @@ a {
     white-space: wrap;
 }
 
-.item-slider img {
+.item-slider img ,.item-slider8 img{
     width: 100%;
     height: auto;
     padding-bottom: 10px;
+}
+.item-slider8 img{
+    width: 250px;
+    height: auto;
+
+    padding: 10px 20px;
 }
 
 .item img {
@@ -1096,7 +1128,7 @@ a {
 
 @media (max-width:992px) {
     .item-slider {
-        width: 25%;
+        width: 45%;
     }
     .item-slider2 {
         width: 30% !important;
@@ -2595,21 +2627,53 @@ p {
 
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1420px) {
     .modal-size-main ,.modal-size-main2{
         width: 90%;
-        height: 95%;
 
     }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:976px) {
     .modal-size-main , .modal-size-main2{
-        width: 55%;
-        height: auto ;
+        width: 68%;
 
     }
 }
+.modal-size-main {
+    height: 80%;
+
+}
+@media (max-width:576px) {
+    .modal-size-main2{
+        height: 60%;
+    }
+
+  
+}
+
+@media (max-width:768px) {
+    .modal-size-main2{
+        height: 50%;
+    }
+  
+}
+
+@media (max-width:992px) {
+    .modal-size-main2{
+        height: 70%;
+    }
+    
+}
+
+@media (max-width:1200px) {
+    .modal-size-main2{
+        height: 80%;
+    }
+
+}
+
+
 
 /* @media (max-height:576px) {
     .modal-size-main  {
