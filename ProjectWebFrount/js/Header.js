@@ -1,11 +1,9 @@
-//#region js landing page
 
 //#region  js cods in Giga Menu In NavBar
 
 var gigaCloseNumber = 0;
 
 function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, closePanel, attribute = "width") {
-
     var GigaMenuFother = document.querySelector(closeBtn);
     var GigaMenu = document.querySelector(openBtn);
 
@@ -21,6 +19,7 @@ function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, c
                 GigaMenuFother.style.cssText = `${attribute}:${closePanel}`;
             }, 400);
             gigaCloseNumber = 0;
+
         }
         close();
     }
@@ -323,6 +322,7 @@ window.onload = function () {
 //#endregion
 
 //#region addTag
+
 function addTag(CSearch, CTag,CInput,error) {
     let tagInp = document.querySelector(CInput);
     let err = document.querySelector(error);
@@ -379,4 +379,18 @@ function Activer(ftag, chtag) {
     console.log(tag);
 }
 Activer(".jsActive", "li");
+
+//#endregion
+
+//#region Add or Remove EventLIstener
+    function addEvent(tag,functionL,event1){
+        var tagL = document.querySelector(tag);
+           tagL.addEventListener(event1,functionL);
+
+    }
+
+    function removeEvent(tag,functionL,event1){
+        var tagL = document.querySelector(tag);
+        tagL.removeEventListener(event1,functionL);
+    }
 //#endregion

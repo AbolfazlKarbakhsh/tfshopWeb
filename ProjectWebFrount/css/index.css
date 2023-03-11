@@ -370,7 +370,15 @@ a {
     border-radius: 15px;
 }
 
-.searchInp input {
+.searchInp2 {
+    width: 100%;
+    background: var(--color1);
+    display: flex;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.searchInp input , .searchInp2 input{
     border-radius: 15px 0 0px 15px;
     border-right: 0;
     padding: 2px 15px 2px 15px;
@@ -378,7 +386,7 @@ a {
     width: 100%;
 }
 
-.searchInp span {
+.searchInp span , .searchInp2 span{
     text-align: center;
     align-items: center;
     width: 50px;
@@ -387,20 +395,20 @@ a {
     align-items: center;
 }
 
-.searchInp span i {
+.searchInp2 span i {
     transform: rotate(1deg);
-    color: var(--color2);
+    color: var(--color2) !important;
     font-size: 20px;
 }
 
-.searchInp span i:hover {
-    color: var(--color2Hover);
+ .searchInp2 span i:hover{
+    color: var(--color2Hover) !important;
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.searchInp span i:active {
-    color: var(--color2);
+ .searchInp2 span i:active {
+    color: var(--color2) !important;
     transform: scale(1);
 }
 
@@ -1149,11 +1157,11 @@ a {
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .addbasketprs {
         display: none;
     }
-}
+} */
 
 
 /* start img banner 2 */
@@ -2559,27 +2567,33 @@ p {
 }
 
 @media (max-width:768px) {
-    .modal-size-main {
+    .modal-size-main ,.modal-size-main2{
         width: 90%;
     }
 }
 
 @media screen and (min-width:768px) {
-    .modal-size-main {
+    .modal-size-main , .modal-size-main2{
         width: 55%;
     }
 }
 
 @media (max-height:576px) {
-    .modal-size-main {
+    .modal-size-main  {
         height: 95%;
     }
+   
 }
 
 @media (max-height:992px) {
     .modal-size-main {
         height: 95%;
     }
+
+}
+
+.modal-size-main2{
+ height: auto;
 }
 
 .modal-form {
