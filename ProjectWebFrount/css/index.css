@@ -392,6 +392,7 @@ a {
     background: var(--color1);
     display: flex;
     height: 30px;
+    cursor: text !important;
     border-radius: 15px;
 }
 
