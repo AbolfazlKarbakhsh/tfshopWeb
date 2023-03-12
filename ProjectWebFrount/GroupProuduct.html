@@ -1916,6 +1916,13 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 joinNewsLetter_container">
               <form action="/Home/JoinNewsLetter" class="rd-form rd-mailform form-inline">
+                <input
+                  class="form-input form-control form-control-has-validation" data-val="true"
+                  data-val-maxlength="حداکثر طول کاراکتر ، 255" data-val-maxlength-max="255"
+                  data-val-regex="آدرس ایمیل وارد نمایید"
+                  data-val-regex-pattern="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                  data-val-required="وارد کردن ایمیل ، اجباری است" id="EmailNewsletter" name="Email"
+                  placeholder="آدرس ایمیل" type="email" value="" />
                 <input type="submit" class="btn fc mt-2 mt-sm-0 effect" value="عضویت در خبرنامه" />
               </form>
             </div>
