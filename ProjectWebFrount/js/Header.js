@@ -132,13 +132,14 @@ function openNav(openBtn, closeBtn, widthBtnOrFother, widthPanel, closeFother, c
                     indexSlide -= 1;
                 }
             }
-
+           
             for (i = 0; i <= slidejsNumber; i++) {
                 slidejsTag[i].style.display = "none";
-                slidejsTag[i].style.cssText += "transform: scale(0);  transition: transform 2s ;";
+
+            slidejsTag[i].style.cssText += "transform: scale(0);  transition: transform 2s ; animation-name: opacity; animation-duration: 0.2s; animation-timing-function: ease-in; ";
             }
             const slidbarTag = slidejsTag[indexSlide];
-            slidbarTag.style.cssText = "transform: scale(1);  transition: transform 2s ";
+            slidbarTag.style.cssText = "transform: scale(1);  transition: transform 2s ;animation-name: opacity-out; animation-duration: 0.2s; animation-timing-function: ease-in;";
             slidbarTag.style.display = "flex";
 
 
