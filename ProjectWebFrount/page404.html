@@ -10,6 +10,21 @@
       font-family: "v1";
       src: url("css/vazir.ttf") format("truetype");
     }
+    @keyframes opacity {
+    0%   {opacity: 0;}
+    25%   {opacity: 25%;}
+    50%   {opacity: 50%;}
+    75%   {opacity: 75%;}
+    100% {opacity: 100%;}
+  }
+
+  @keyframes opacity-out {
+    100% {opacity: 100%;}
+    75%   {opacity: 75%;}
+    50%   {opacity: 50%;}
+    25%   {opacity: 25%;}
+    0%   {opacity: 0;}
+  }
     body {
       display: flex;
       flex-flow: row wrap;
@@ -74,11 +89,14 @@
       padding: 20px;
       border: 1px solid #673ab7;
       border-radius: 10px;
+      animation: opacity 0.1s;
       margin-top: 30px;
     }
 
     .me:hover {
       background: #673ab7;
+      animation:  opacity-out  0.1s;
+
       color: white;
     }
     .text span {

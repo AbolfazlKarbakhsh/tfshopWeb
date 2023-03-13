@@ -1,4 +1,4 @@
-<html lang="fa">
+<html lang="fa" >
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
 
 </head>
 
-<body dir="rtl">
+<body dir="rtl" >
 
 
     <header class="boxShadow">
@@ -1263,7 +1263,7 @@
                                     </div>
                                     <div class="c-gallery__img mySlides lg-outer mb-3">
                                         <img src="img/p1.webp" alt="" class="img-respansive">
-                                        <div class="video-push"><span class="fa fa-play-circle effect"></span></div>
+                                        <div class="video-push"><span class="fa fa-play-circle effect"   onclick="openNav('.m10', '.m11', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"></span></div>
                                     </div>
                                     <div class="c-gallery__img mySlides  mb-3">
                                         <img src="img/pppp.webp" alt="" class="img-respansive">
@@ -1296,7 +1296,7 @@
                 </div>
 
                 <!-- product start -->
-                <div class="col-12 col-lg-8 col-md-12 pr-info-container">
+                <div class="col-12 col-lg-8 col-md-12 pr-info-container height-auto">
                     <div class="pr_detail">
                         <div class="product_description">
                             <h1 class="product_title"><a href="" dideo-checked="true">دریل
@@ -1310,7 +1310,18 @@
                                         <span> Drill </span>
 
                                     </h2>
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0 m-2">رنگ انتخاب شده:</p>
+                                        <div class="color-box"></div>
+                                    </div>
+                                 
 
+                                    <div class="form-group d-flex ">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option selected> آبی</option>
+                                            <option>  زرد  </option>
+                                        </select>
+                                    </div>
                                     <div class="code-shop "><label>کد فروش : </label> 0601472600 </div>
 
                                     <div class="brand-row">
@@ -1361,22 +1372,26 @@
                                 </div>
 
 
-                                <div class="col-11 col-md-4 row" id="del-info">
+                                <div class="col-11 col-md-4 row " id="del-info">
                                     <div class="col-7 mb-2">
                                         <a href="">
                                             <div class="rating_wrap">
-                                                پرسش و پاسخ (<span>1</span>)
+                                                <a href="#porsesh">
+                                                    پرسش و پاسخ (<span>1</span>)
+                                                </a>
                                             </div>
                                         </a>
 
                                     </div>
+                             
 
                                     <div class="col-5">
                                         <a href="">
                                             <img src="img/l2.jpg" alt="" class="img-respansive">
                                         </a>
                                     </div>
-
+                                    <!-- mojod cod  -->
+                               
                                     <div class="col-12">
                                         <div class="form-group d-flex">
                                             <img src="img/l4.webp" alt="" class="img-icon pl-2">
@@ -1416,6 +1431,25 @@
                                             </div>
                                         </div>
                                     </div>
+                            
+                                    <!-- namojod cods  -->
+                                <div class="col-12 d-none">
+                                    <div class="noProdact">
+                                        <div>ناموجود</div>
+                                        <hr>
+                                        <!-- button off -->
+                                        <div class="">
+
+                                        <p>
+                                            متاسفانه این کالا در حال حاضر موجود نیست. می توانید از طریق دکمه زیر از زمان موجود شدن آن مطلع شوید.
+                                        </p>
+
+                                        <button class="effect">موجود شد به من اطلاع بده </button>
+                                      </div>
+                                        <!-- button on  -->
+                                        <p class="font-weight-bold d-none">در صورت موجود شدن به شما اطلاع داده خواهد شد!</p>
+                                    </div>
+                                </div>
 
                                 </div>
                             </div>
@@ -1640,7 +1674,7 @@
             </article>
 
             <!-- video of product  -->
-            <section id="video">
+            <section>
                 <div class="row">
                     <div class="col-12 boxShadow  mtb videoBox">
 
@@ -1840,7 +1874,7 @@
 
                     </div>
                     <!-- quiezs  -->
-                    <div class="col-12 boxShadow  voteProduct">
+                    <div class="col-12 boxShadow  voteProduct ">
                         <!-- head nav  -->
                         <div class=" mb-4 d-flex d-flex-between border-bottom pb-2 row headnav">
 
@@ -1861,10 +1895,10 @@
 
                         <!-- quies box  -->
 
-                        <div class="border p-4 mb-3">
-                            <div class="  border-dashed-bottom">
+                        <div class="border co-dk p-4 mb-3" id="porsesh">
+                            <div class="  border-dashed-bottom ">
                                 <div>
-                                    <span> سلام سال ساخت این دریل چه سالی هستش؟ </span>
+                                    <span > سلام سال ساخت این دریل چه سالی هستش؟ </span>
                                 </div>
                                 <div class="mbt1">
                                     (
@@ -1875,8 +1909,9 @@
                             </div>
                             <div class="user-content">
                                 <div class="vote-like">
-                                    <p class="mb-4">
-                                        این دریل نمونه نداره
+                                    <p class="mb-4 mr-5">
+                                        <span > پاسخ ادمین :</span>
+                                         1402 هستش  
                                     </p>
                                 </div>
                             </div>
@@ -2271,14 +2306,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="clickVisible">
-            Lorem
-        </div>
-        <div class="visibleit" style="visibility: hidden;">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi perspiciatis harum nostrum ipsam esse beatae
-            ex, consequatur quaerat laborum atque omnis reprehenderit ad! Nulla, rem vel exercitationem rerum maiores
-            corrupti?
-        </div> -->
   </footer>
   <!-- end footer  -->
     
@@ -2415,6 +2442,53 @@
             </div>
         </div>
 
+        <!--  modal video -->
+
+       <div class="modal-fother m11">
+         <div class="modal-child m10 modal-size-main2" onclick="event.stopPropagation()">
+              <div class="modal-form">
+                 <div class="">
+
+          <div class="close4  text-left  ">
+            <span class="fa fa-arrow-left effect "
+              onclick="openNav('.m10', '.m11', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"></span>
+          </div>
+
+
+          <div class="row">
+            <div class="col-12 boxShadow  mtb videoBox">
+
+                <div class="texthead">
+                    فیلم معرفی محصول
+                </div>
+                <div class="centerBox">
+                    <!-- 1:1 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-1by1 d-block d-md-none d-lg-none">
+                        <video src="video/LG_c3815d1c-d12d-4b90-929f-d4a7503f425b.mp4" muted controls
+                            class="embed-responsive-item "></video>
+                    </div>
+
+                    <!-- 1:1 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-4by3 d-none d-md-block d-lg-none">
+                        <video src="video/LG_c3815d1c-d12d-4b90-929f-d4a7503f425b.mp4" muted controls
+                            class="embed-responsive-item "></video>
+                    </div>
+
+                    <!-- 21:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-21by9 d-none d-lg-block">
+                        <video src="video/LG_c3815d1c-d12d-4b90-929f-d4a7503f425b.mp4" muted controls
+                            class="embed-responsive-item "></video>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
 
     <!-- js link -->
     <script src="js/Header.js"></script>
