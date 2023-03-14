@@ -387,6 +387,52 @@ Activer(".jsActive", "li");
 
 //#endregion
 
+//#region SearchTag
+const SearchTag = (tag) => {
+  return  document.querySelector(tag);
+}
+
+const SearchTagAll = (tag) => {
+   return document.querySelectorAll(tag);
+}
+//#endregion
+
+//#region addClass
+const addClass = (tag,class1)=>{
+   return tag.classList.add(class1);
+}
+//#endregion
+//#region 
+
+//#region addClass
+const RemoveClass = (tag,class1)=>{
+    return tag.classList.remove(class1);
+ }
+ //#endregion
+
+ //#region star vote
+
+ function starClass(tagAll,class1,res){
+    const stars = SearchTagAll(tagAll);
+    stars.forEach((item,index)=>{
+        console.log(item);
+       item.addEventListener('click', ()=>{
+        for(let i = 0; i<5;i++){
+            RemoveClass(stars[i],class1);
+        }
+        for(let i = 0; i<=index;i++){
+            addClass(stars[i],class1);
+            const resualt = SearchTag(res);
+            resualt.innerHTML = index+1;
+
+        }
+       })
+    })
+}
+starClass("span[date-start]","activeVote",".resualt-star");
+
+//#endregion
+
 //#region Add or Remove EventLIstener
     function addEvent(tag,functionL,event1){
         var tagL = document.querySelector(tag);

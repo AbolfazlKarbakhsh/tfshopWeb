@@ -2333,7 +2333,7 @@
                                 placeholder="جستجو..." id="" />
                         </div>
                         <!-- product resualt  -->
-                        <div class="flex flex-nowrap overflow1  noSelect  slidejs1 " data-slide="0">
+                        <div class="flex flex-nowrap overflow1  noSelect">
 
                             <div class="item-slider8">
                                 <img src="img/leand/download.png" alt="">
@@ -2376,16 +2376,18 @@
 
                         <div class="form-group mb-2">
                             <label for="" class="text-body-1 ">
-                                عنوان نظر
+                                عنوان نظر:
                             </label>
 
                             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <p class="text-danger d-min dn">لطفا مقداری بیش از 20 کاراکتر وارد کنید!</p>
+
                         </div>
 
                         <div class="form-group mb-1">
 
                             <label for="" class="text-body-1">
-                                نکات مثبت
+                                نکات مثبت:
                             </label>
                             <div class="d-flex-between">
                                 <span class="fa fa-plus ml-2  effect pointer "
@@ -2399,9 +2401,9 @@
 
                         </div>
 
-                        <div class="form-group mb-1">
+                        <div class="form-group mb-2">
                             <label for="" class="text-body-1">
-                                نکات منفی
+                                نکات منفی:
                             </label>
 
                             <div class="d-flex-between">
@@ -2415,13 +2417,41 @@
                             </div>
                         </div>
 
+                        <div class="form-group mb-1">
+                            <label for="" class="text-body-1">
+                                امتیاز شما نسبت به این کالا : 
+                            </label>
+
+                            <div class="starts">
+                                <span class="five-pointed-star ml-2 activeVote" date-start title="1 امتیاز"></span>
+                                <span class="five-pointed-star  ml-2 activeVote" date-start title="2 امتیاز"></span>
+                                <span class="five-pointed-star ml-2 activeVote" date-start title="3 امتیاز"></span>
+                                <span class="five-pointed-star ml-2 activeVote" date-start title="4 امتیاز"></span>
+                                <span class="five-pointed-star ml-2 activeVote" date-start title="5 امتیاز"></span>
+                                <p class="mr-2">از مجموعه <span class="color-web resualt-star">5</span> امتیاز</p>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label for="" class="text-body-1">
+                                نظر شما نسبت به این کالا : 
+                            </label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option selected>خرید این محصول را توصیه میکنم!</option>
+                                <option> خرید این محصول را توصیه نمیکنم!</option>
+                            </select>
+                        </div>
+
 
                         <div class="form-group mb-1">
                             <label for="" class="text-body-1">
-                                متن نظر
+                                متن نظر:
                             </label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
                                 placeholder="برای ما بنویسید ..."></textarea>
+                            <p class="text-danger d-min dn">لطفا مقداری بیش از 20 کاراکتر وارد کنید!</p>
+
                         </div>
                         <div class="d-flex justify-content-center pt-3 w-100">
                             <div class=" btn-modal">
