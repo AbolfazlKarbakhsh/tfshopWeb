@@ -1256,14 +1256,24 @@ a {
 }
 
 .price {
-    color: var(--color5Price);
+    color: var(--color5Price) !important;
     font-weight: 600;
     font-size: 18px;
 }
 
+.price1{
+    color: var(--color5Price) !important;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.toman1{
+    font-size: .8rem;
+    color: var(--color5Price) !important;
+    margin-bottom: 3px;
+}
 .toman {
     font-size: 14px;
-    color: var(--color5Price);
+    color: var(--color5Price) !important;
     margin-bottom: 3px;
 }
 
@@ -1277,6 +1287,14 @@ a {
     cursor: pointer;
 }
 
+.iconBasket span{
+    font-size: 2rem !important;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--color5Price);
+    cursor: pointer;
+}
 
 /* @media (min-width: 768px) {
     .addbasketprs {
@@ -2022,6 +2040,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
         font-size: 1rem;
         cursor: pointer;
     }
+
     .modalShow {
         background-color: white;
         z-index: 999;
@@ -2247,6 +2266,18 @@ p {
     direction: rtl;
     margin-top: 10px;
     min-height: 60px;
+}
+
+.bgProduct{
+    background-color: #eaeaea;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btnBasket{
+    background-color: rgb(233, 232, 232);
+    border:1px solid rgba(100, 100, 100, 0.659) !important;
+    color: black ;
 }
 
 .switch_lable {
@@ -2501,7 +2532,13 @@ p {
     margin-bottom: 24px !important;
 }
 
-
+.addRow li{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
 /* table product */
 
 @media (max-width: 400px) {
@@ -2742,6 +2779,14 @@ p {
     .modal-size-main2 {
         height: 60%;
     }
+    .modal-size-main {
+        height: 100%;
+        width: 100%;
+    }
+    .modal-child{
+        margin: 0;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width:768px) {
@@ -2782,7 +2827,7 @@ p {
 }
 
 .modal-form * {
-    color: #000 !important;
+    color: #000 ;
 }
 
 .btn-modal {
