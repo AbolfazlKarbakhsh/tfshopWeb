@@ -1289,13 +1289,13 @@ a {
 
 .iconBasket span{
     font-size: 2rem !important;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    color: var(--color5Price);
+    color: var(--color5Price) !important;
     cursor: pointer;
-}
 
+}
+.iconBasket{
+    text-align: left;
+}
 /* @media (min-width: 768px) {
     .addbasketprs {
         display: none;

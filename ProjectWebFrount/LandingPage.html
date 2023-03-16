@@ -89,26 +89,17 @@
       <div class="container d-sm-flex justify-content-between align-items-center headContent text-center">
         <!-- contact box  -->
         <ul class="nav-contact d-none d-sm-flex">
-          <a href="">
-            <li class="">
-              <span class="fa fa-shopping-basket icon-concat"></span>
-              <span class="d-none d-sm-flex" data-basket>سبد </span>
-            </li>
-          </a>
+          <li class="" onclick="openNav('.m21', '.m20', 'inherit', 'inherit', 'hidden', 'hidden','visibility')">
+            <span class="fa fa-shopping-basket icon-concat"></span>
+            <span class="d-none d-sm-flex" data-basket>سبد </span>
+          </li>
 
-          <a href="">
-            <li class="">
-              <span class="fa fa-heart-o icon-concat"></span>
-              <span href="" class="d-none d-sm-flex">علاقه مندی ها</span>
-            </li>
-          </a>
 
-          <a href="">
-            <li class="">
-              <span class="fa fa-user-o icon-concat"></span>
-              <span href="" class="d-none d-sm-flex">ورود / ثبت نام</span>
-            </li>
-          </a>
+          <li class="">
+            <span class="fa fa-user-o icon-concat"></span>
+            <span href="" class="d-none d-sm-flex">ورود / ثبت نام</span>
+          </li>
+
         </ul>
 
         <!-- search box -->
@@ -201,29 +192,24 @@
             style="font-size: 12px; padding-bottom: 2px">محصولات</span>
         </div>
 
-        <a href="">
-          <div class="d-flex flex-column justify-content-between text-center">
-            <span class="fa fa-user-o icon-concat MobileNav m-0"></span><span
-              style="font-size: 12px; padding-bottom: 2px">ورود / ثبت نام</span>
-          </div>
-        </a>
-        <a href="">
-          <div class="d-flex flex-column justify-content-between text-center">
-            <span class="fa fa-heart-o icon-concat MobileNav m-0"></span><span
-              style="font-size: 12px; padding-bottom: 2px">علاقه مندی ها</span>
-          </div>
-        </a>
-        <a href="">
-          <div class="d-flex flex-column justify-content-between text-center">
-            <span class="fa fa-shopping-basket icon-concat MobileNav m-0"></span><span
-              style="font-size: 12px; padding-bottom: 2px">سبد</span>
-          </div>
-        </a>
+        <div class="d-flex flex-column justify-content-between text-center">
+          <span class="fa fa-user-o icon-concat MobileNav m-0"></span><span
+            style="font-size: 12px; padding-bottom: 2px">ورود / ثبت نام</span>
+        </div>
+
+
+
+        <div class="d-flex flex-column justify-content-between text-center"
+          onclick="openNav('.m21', '.m20', 'inherit', 'inherit', 'hidden', 'hidden','visibility')">
+          <span class="fa fa-shopping-basket icon-concat MobileNav m-0"></span><span
+            style="font-size: 12px;padding-bottom: 2px;">سبد</span>
+        </div>
+
       </div>
     </nav>
 
- 
-    
+
+
   </header>
   <!-- End Header -->
 
@@ -1622,8 +1608,7 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 joinNewsLetter_container">
               <form action="/Home/JoinNewsLetter" class="rd-form rd-mailform form-inline">
-                <input
-                  class="form-input form-control form-control-has-validation" data-val="true"
+                <input class="form-input form-control form-control-has-validation" data-val="true"
                   data-val-maxlength="حداکثر طول کاراکتر ، 255" data-val-maxlength-max="255"
                   data-val-regex="آدرس ایمیل وارد نمایید"
                   data-val-regex-pattern="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
@@ -1750,9 +1735,9 @@
   </footer>
   <!-- end footer  -->
 
-   <!--  modal search -->
+  <!--  modal search -->
 
-   <div class="modal-fother">
+  <div class="modal-fother">
     <div class="modal-child modal-size-main2" onclick="event.stopPropagation()">
       <div class="modal-form">
         <div class="">
@@ -1767,35 +1752,128 @@
           <!-- search box -->
           <div class="searchInp2 mb-4">
             <span> <i class="fa fa-search"></i> </span>
-            <input type="text" spellcheck="false" class="noneBorderOut inpRem1" name="" placeholder="جستجو..."
-              id="" />
+            <input type="text" spellcheck="false" class="noneBorderOut inpRem1" name="" placeholder="جستجو..." id="" />
           </div>
-              <!-- product resualt  -->
-              <div class="flex flex-nowrap overflow1  noSelect  slidejs1 " data-slide="0">
+          <!-- product resualt  -->
+          <div class="flex flex-nowrap overflow1  noSelect  slidejs1 " data-slide="0">
 
-                <div class="item-slider8">
-                  <img src="img/leand/download.png" alt="">
-                  <h2 class="titr-text">محصول مورد نظر را جستجو کنید:</h2>
+            <div class="item-slider8">
+              <img src="img/leand/download.png" alt="">
+              <h2 class="titr-text">محصول مورد نظر را جستجو کنید:</h2>
+            </div>
+
+            <div class="item-slider8">
+              <img src="img/leand/download (1).png" alt="">
+              <h2 class="titr-text">محصول مورد نظر یافت نشد:</h2>
+            </div>
+
+            <!-- item  -->
+            <div class="item-slider8">
+              <img src="img/img-bootom/a2.jpg" alt="">
+              <h2 class="titr-text"><a href="">جا شمعی</a></h2>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- modal basket  -->
+  <div class="modal-fother m20">
+    <div class="modal-child m21 modal-size-main" onclick="event.stopPropagation()">
+      <div class="modal-form">
+        <div class=" boxShadow p-1">
+
+          <div class="close4  text-left  m-3">
+            <span class="fa fa-arrow-left effect "
+              onclick="openNav('.m21', '.m20', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"></span>
+          </div>
+
+          <!-- basket  -->
+          <div class="row">
+            <div class="col-12">
+
+              <div class="font4 mb-3">
+                سبد خرید
+                ( کالا: <span>1</span> عدد )
+              </div>
+              <hr>
+              <div>
+                <!-- product basket  -->
+                <ul class="addRow">
+                  <li>
+                    <div class="col-12 col-sm-4 col-lg-3 ">
+                      <img src="img/img-bootom/s2/a5.jpg" alt="" class="img-respansive">
+                    </div>
+
+                    <div class="col-12 col-sm-7 p-0">
+                      <p class="fontS2">انبر پرس سرسیم به همراه کانکتور کنیپکس مدل
+                        979021
+                      </p>
+
+                      <p class="fontS1">
+                        تعداد :
+                        <span>1</span>
+                        عدد
+                      </p>
+                      <p>
+                        <span class=" price1">417,000 </span> <label class="toman1">تومان</label>
+
+                      </p>
+                    </div>
+                    <div class="col-12 col-sm-1 iconBasket">
+                      <span class="fa fa-trash effect"></span>
+                    </div>
+                    <div class="col-12">
+                      <hr>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Resualt Product  -->
+                <div class="row">
+                  <div class="col-12 d-flex-between align-items-center p-0 p-sm-1  ">
+                    <div class="p-0 m-0">
+                      جمع سبد :
+                    </div>
+                    <div>
+                      <p class="p-0 m-0">
+                        <span class="price ">417,000 </span> <label class="toman">تومان</label>
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="item-slider8">
-                  <img src="img/leand/download (1).png" alt="">
-                  <h2 class="titr-text">محصول مورد نظر یافت نشد:</h2>
-                </div>
-
-                <!-- item  -->
-                <div class="item-slider8">
-                  <img src="img/img-bootom/a2.jpg" alt="">
-                  <h2 class="titr-text"><a href="">جا شمعی</a></h2>
-                </div>
-          
 
 
+              </div>
+
+            </div>
+          </div>
+          <hr>
+          <!-- button basket   -->
+          <div class="row">
+            <div class="col-12 d-flex justify-content-end  mb-2 mt-2 ">
+              <div class="p-0 m-1">
+                <button class="btn effect  btnBasket ">
+                  سبد خرید
+                </button>
+              </div>
+              <div class="p-0 m-1 ml-0">
+                <button class="btn effect coBack text-white ">
+                  تکمیل سفارش
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
   </div>
 
 

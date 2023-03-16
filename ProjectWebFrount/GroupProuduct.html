@@ -94,33 +94,29 @@
 
                 <!-- contact box  -->
                 <ul class="nav-contact d-none d-sm-flex">
-                    <a href="">
-                        <li class="">
-                            <span class="fa fa-shopping-basket icon-concat"></span>
-                            <span class="d-none d-sm-flex" data-basket>سبد </span>
-                        </li>
-                    </a>
+                    <li class=""
+                        onclick="openNav('.m21', '.m20', 'inherit', 'inherit', 'hidden', 'hidden','visibility')">
+                        <span class="fa fa-shopping-basket icon-concat"></span>
+                        <span class="d-none d-sm-flex" data-basket>سبد </span>
+                    </li>
+                    <li class="">
+                        <span class="fa fa-heart-o icon-concat"></span>
+                        <span href="" class="d-none d-sm-flex">علاقه مندی ها</span>
+                    </li>
 
-                    <a href="">
-                        <li class="">
-                            <span class="fa fa-heart-o icon-concat"></span>
-                            <span href="" class="d-none d-sm-flex">علاقه مندی ها</span>
-                        </li>
-                    </a>
 
-                    <a href="">
-                        <li class="">
-                            <span class="fa fa-user-o icon-concat"></span>
-                            <span href="" class="d-none d-sm-flex">ورود / ثبت نام</span>
-                        </li>
-                    </a>
+
+                    <li class="">
+                        <span class="fa fa-user-o icon-concat"></span>
+                        <span href="" class="d-none d-sm-flex">ورود / ثبت نام</span>
+                    </li>
+
                 </ul>
 
                 <!-- search box -->
                 <div class="searchInp d-none d-lg-flex">
                     <span> <i class="fa fa-search"></i> </span>
-                    <input
-                        onclick="openNav('.m3', '.m4', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"
+                    <input onclick="openNav('.m3', '.m4', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"
                         type="text" spellcheck="false" class="noneBorderOut inpRem1" name="" placeholder="جستجو..."
                         id="" readonly />
                 </div>
@@ -136,7 +132,8 @@
             <div class="container smallSearch">
                 <div class="searchInp d-flex d-lg-none w-100 d-block">
                     <span> <i class="fa fa-search"></i> </span>
-                    <input type="text" spellcheck="false" class="noneBorderOut " readonly name="" placeholder="جستجو..." id="" onclick="openNav('.m3', '.m4', 'inherit', 'inherit', 'hidden', 'hidden','visibility')">
+                    <input type="text" spellcheck="false" class="noneBorderOut " readonly name="" placeholder="جستجو..."
+                        id="" onclick="openNav('.m3', '.m4', 'inherit', 'inherit', 'hidden', 'hidden','visibility')">
                 </div>
             </div>
         </section>
@@ -1171,30 +1168,23 @@
                         style="font-size: 12px;padding-bottom: 2px;">محصولات</span>
                 </div>
 
-                <a href="">
-                    <div class="d-flex flex-column justify-content-between text-center">
-                        <span class="fa fa-user-o icon-concat MobileNav m-0"></span><span
-                            style="font-size: 12px;padding-bottom: 2px;">ورود / ثبت نام</span>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="d-flex flex-column justify-content-between text-center">
-                        <span class="fa fa-heart-o icon-concat MobileNav m-0"></span><span
-                            style="font-size: 12px;padding-bottom: 2px;">علاقه مندی ها</span>
 
-                    </div>
-                </a>
-                <a href="">
-                    <div class="d-flex flex-column justify-content-between text-center">
-                        <span class="fa fa-shopping-basket icon-concat MobileNav m-0"></span><span
-                            style="font-size: 12px;padding-bottom: 2px;">سبد</span>
-                    </div>
+                <div class="d-flex flex-column justify-content-between text-center">
+                    <span class="fa fa-user-o icon-concat MobileNav m-0"></span><span
+                        style="font-size: 12px;padding-bottom: 2px;">ورود / ثبت نام</span>
+                </div>
 
-                </a>
+
+
+                <div class="d-flex flex-column justify-content-between text-center"
+                    onclick="openNav('.m21', '.m20', 'inherit', 'inherit', 'hidden', 'hidden','visibility')">
+                    <span class="fa fa-shopping-basket icon-concat MobileNav m-0"></span><span
+                        style="font-size: 12px;padding-bottom: 2px;">سبد</span>
+                </div>
             </div>
         </nav>
 
-     
+
     </header>
 
 
@@ -1812,228 +1802,234 @@
         <br>
     </main>
 
-     <!-- start footer  -->
-  <footer class="bg_gray">
-    <!-- footer top  -->.
-    <section>
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="shopping_info">
-                <div class="row justify-content-center">
-                  <div class="col-lg-3">
-                    <div class="footer_logo">
-                      <a href="/">
-                        <img class="img-responsive" alt="فروشگاه اینترنتی ابزار ، یراق ، لوازم خانگی ، جعبه ابزار کامل"
-                          height="63" src="img/Logo.webp"
-                          title="فروشگاه اینترنتی ابزار ، یراق ، لوازم خانگی ، جعبه ابزار کامل" width="230" />
-                      </a>
+    <!-- start footer  -->
+    <footer class="bg_gray">
+        <!-- footer top  -->.
+        <section>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shopping_info">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-3">
+                                        <div class="footer_logo">
+                                            <a href="/">
+                                                <img class="img-responsive"
+                                                    alt="فروشگاه اینترنتی ابزار ، یراق ، لوازم خانگی ، جعبه ابزار کامل"
+                                                    height="63" src="img/Logo.webp"
+                                                    title="فروشگاه اینترنتی ابزار ، یراق ، لوازم خانگی ، جعبه ابزار کامل"
+                                                    width="230" />
+                                            </a>
+                                        </div>
+                                        <p class="mb-3 font-p-sm">
+                                            فروشگاه اینترنتی تهران فرم برای سهولت در خرید برای
+                                            کاربران تهران و کرج ، امکان خرید حضوری در مکان فروشگاه
+                                            ها را فراهم نموده است .
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="icon_box icon_box_style2 align-items-center">
+                                            <div class="icon">
+                                                <img src="img/iconFooter/shipped.png" alt="">
+                                            </div>
+                                            <div class="icon_box_content">
+                                                <h5>ارسال سریع</h5>
+                                                <p class="">امکان تحویل سفارش در کمتر از 24 ساعت برای تهران</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="icon_box icon_box_style2">
+                                            <div class="icon">
+                                                <img src="img/iconFooter/badge (2).png" alt="">
+                                            </div>
+                                            <div class="icon_box_content">
+                                                <h5>اصالت کالا</h5>
+                                                <p class="">ارائه دهنده محصولات با اصالت.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="icon_box icon_box_style2">
+                                            <div class="icon">
+                                                <img src="img/iconFooter/support.png" alt="">
+                                            </div>
+                                            <div class="icon_box_content">
+                                                <h5>پشتیبانی آنلاین</h5>
+                                                <p class="">پشتیبانی سریع و لحظه ای 24 ساعته.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="mb-3 font-p-sm">
-                      فروشگاه اینترنتی تهران فرم برای سهولت در خرید برای
-                      کاربران تهران و کرج ، امکان خرید حضوری در مکان فروشگاه
-                      ها را فراهم نموده است .
-                    </p>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="icon_box icon_box_style2 align-items-center">
-                      <div class="icon">
-                        <img src="img/iconFooter/shipped.png" alt="">
-                      </div>
-                      <div class="icon_box_content">
-                        <h5>ارسال سریع</h5>
-                        <p class="">امکان تحویل سفارش در کمتر از 24 ساعت برای تهران</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="icon_box icon_box_style2">
-                      <div class="icon">
-                        <img src="img/iconFooter/badge (2).png" alt="">
-                      </div>
-                      <div class="icon_box_content">
-                        <h5>اصالت کالا</h5>
-                        <p class="">ارائه دهنده محصولات با اصالت.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="icon_box icon_box_style2">
-                      <div class="icon">
-                        <img src="img/iconFooter/support.png" alt="">
-                      </div>
-                      <div class="icon_box_content">
-                        <h5>پشتیبانی آنلاین</h5>
-                        <p class="">پشتیبانی سریع و لحظه ای 24 ساعته.</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer main  -->
-    <section>
-      <div class="footer_top small_pt pb_20">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 social_icons_container">
-              <div class="widget js-right mb-lg-0">
-                <ul class="social_icons">
-                  <li>
-                    <a href="https://www.instagram.com/tfshops/" title="اینستاگرام" target="_blank"
-                      dideo-checked="true">
-                      <i class="fa fa fa-instagram effect"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/channel/UCWkTlCWNt_v624A7gXh0fTg" title="یوتیوب" target="_blank"
-                      dideo-checked="true">
-                      <i class="fa fa fa-youtube effect"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.facebook.com/tfshopsco/" title="فیسبوک" target="_blank" dideo-checked="true">
-                      <i class="fa fa fa-facebook effect"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.aparat.com/tfshops" title="آپارات" target="_blank" dideo-checked="true">
-                      <i class="fa fa fa-film effect"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/tfshops" title="توئیتر" target="_blank" dideo-checked="true">
-                      <i class="fa fa fa-twitter effect"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 joinNewsLetter_container">
-              <form action="/Home/JoinNewsLetter" class="rd-form rd-mailform form-inline">
-                <input
-                  class="form-input form-control form-control-has-validation" data-val="true"
-                  data-val-maxlength="حداکثر طول کاراکتر ، 255" data-val-maxlength-max="255"
-                  data-val-regex="آدرس ایمیل وارد نمایید"
-                  data-val-regex-pattern="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
-                  data-val-required="وارد کردن ایمیل ، اجباری است" id="EmailNewsletter" name="Email"
-                  placeholder="آدرس ایمیل" type="email" value="" />
-                <input type="submit" class="btn fc mt-2 mt-sm-0 effect" value="عضویت در خبرنامه" />
-              </form>
-            </div>
+        </section>
+        <!-- footer main  -->
+        <section>
+            <div class="footer_top small_pt pb_20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 social_icons_container">
+                            <div class="widget js-right mb-lg-0">
+                                <ul class="social_icons">
+                                    <li>
+                                        <a href="https://www.instagram.com/tfshops/" title="اینستاگرام" target="_blank"
+                                            dideo-checked="true">
+                                            <i class="fa fa fa-instagram effect"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCWkTlCWNt_v624A7gXh0fTg"
+                                            title="یوتیوب" target="_blank" dideo-checked="true">
+                                            <i class="fa fa fa-youtube effect"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/tfshopsco/" title="فیسبوک" target="_blank"
+                                            dideo-checked="true">
+                                            <i class="fa fa fa-facebook effect"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.aparat.com/tfshops" title="آپارات" target="_blank"
+                                            dideo-checked="true">
+                                            <i class="fa fa fa-film effect"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/tfshops" title="توئیتر" target="_blank"
+                                            dideo-checked="true">
+                                            <i class="fa fa fa-twitter effect"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 joinNewsLetter_container">
+                            <form action="/Home/JoinNewsLetter" class="rd-form rd-mailform form-inline">
+                                <input class="form-input form-control form-control-has-validation" data-val="true"
+                                    data-val-maxlength="حداکثر طول کاراکتر ، 255" data-val-maxlength-max="255"
+                                    data-val-regex="آدرس ایمیل وارد نمایید"
+                                    data-val-regex-pattern="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                                    data-val-required="وارد کردن ایمیل ، اجباری است" id="EmailNewsletter" name="Email"
+                                    placeholder="آدرس ایمیل" type="email" value="" />
+                                <input type="submit" class="btn fc mt-2 mt-sm-0 effect" value="عضویت در خبرنامه" />
+                            </form>
+                        </div>
 
-            <div class="col-lg-3 col-md-12 col-sm-12">
-              <div class="widget">
-                <h6 class="widget_title">ارتباط با ما</h6>
-                <ul class="contact_info">
-                  <li>
-                    <i class="ti-location-pin"></i>
-                    <p>
-                      فروشگاه تهران : پایین تر از میدان توحید ، خیابان نیایش
-                      شرقی (اردبیل) ، نرسیده به خوش شمالی ، پلاک 107
-                    </p>
-                  </li>
-                  <li>
-                    <i class="ti-mobile"></i>
-                    <p>02166949028 - 02166934389</p>
-                  </li>
-                  <li>
-                    <i class="ti-location-pin"></i>
-                    <p>
-                      فروشگاه کرج : ایستگاه مترو کرج – ابتدای پل سرحد آباد –
-                      جنب کمیته امداد
-                    </p>
-                  </li>
-                  <li>
-                    <i class="ti-mobile"></i>
-                    <p>02632817023 - 02632817015 - 02632802613</p>
-                  </li>
-                  <li>
-                    <i class="ti-email"></i>
-                    <a href="mailto:info@Tfshops.com" dideo-checked="true">info@Tfshops.com</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="widget">
-                <h6 class="widget_title">دسترسی سریع</h6>
-                <ul class="widget_links">
-                  <li>
-                    <a href="/content/401/شرایط-استفاده" dideo-checked="true">شرایط استفاده</a>
-                  </li>
-                  <li>
-                    <a href="/content/401/شرایط-استفاده" dideo-checked="true">سوالات متداول</a>
-                  </li>
-                  <li>
-                    <a href="/content/999/درباره-تهران-فرم" dideo-checked="true">درباره ما</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="widget">
-                <h6 class="widget_title">حساب کاربری</h6>
-                <ul class="widget_links">
-                  <li><a href="/Profile" dideo-checked="true">پروفایل</a></li>
-                  <li>
-                    <a href="/Account/Login" dideo-checked="true">ورود</a>
-                  </li>
-                  <li>
-                    <a href="/Account/Register" dideo-checked="true">ثبت نام</a>
-                  </li>
-                  <li>
-                    <a href="/Account/ForgotPassword" dideo-checked="true">فراموشی رمز عبور</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-4 col-sm-12">
-              <div class="widget">
-                <div class="tagcloud text-center-tfs vertical-top">
-                  <img src="img/mellat.webp" width="60" class="img-responsive" />
-                  <img src="img/saman.webp" width="60" class="img-responsive samanlogo" />
-                  <a target="_blank" href="https://trustseal.enamad.ir/Verify.aspx?id=10671&amp;p=TohIK4RzPr6FsBMk"
-                    dideo-checked="true">
-                    <img src="img/namad-logo.png" alt="نماد اعتماد الکترونیکی" /></a>
-                  <a target="_blank" href="https://ecunion.ir/verify/tfshops.com?token=15902445acf0232aa459"
-                    dideo-checked="true"><img src="img/logo-eteh.png" /></a>
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <div class="widget">
+                                <h6 class="widget_title">ارتباط با ما</h6>
+                                <ul class="contact_info">
+                                    <li>
+                                        <i class="ti-location-pin"></i>
+                                        <p>
+                                            فروشگاه تهران : پایین تر از میدان توحید ، خیابان نیایش
+                                            شرقی (اردبیل) ، نرسیده به خوش شمالی ، پلاک 107
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <i class="ti-mobile"></i>
+                                        <p>02166949028 - 02166934389</p>
+                                    </li>
+                                    <li>
+                                        <i class="ti-location-pin"></i>
+                                        <p>
+                                            فروشگاه کرج : ایستگاه مترو کرج – ابتدای پل سرحد آباد –
+                                            جنب کمیته امداد
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <i class="ti-mobile"></i>
+                                        <p>02632817023 - 02632817015 - 02632802613</p>
+                                    </li>
+                                    <li>
+                                        <i class="ti-email"></i>
+                                        <a href="mailto:info@Tfshops.com" dideo-checked="true">info@Tfshops.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="widget">
+                                <h6 class="widget_title">دسترسی سریع</h6>
+                                <ul class="widget_links">
+                                    <li>
+                                        <a href="/content/401/شرایط-استفاده" dideo-checked="true">شرایط استفاده</a>
+                                    </li>
+                                    <li>
+                                        <a href="/content/401/شرایط-استفاده" dideo-checked="true">سوالات متداول</a>
+                                    </li>
+                                    <li>
+                                        <a href="/content/999/درباره-تهران-فرم" dideo-checked="true">درباره ما</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="widget">
+                                <h6 class="widget_title">حساب کاربری</h6>
+                                <ul class="widget_links">
+                                    <li><a href="/Profile" dideo-checked="true">پروفایل</a></li>
+                                    <li>
+                                        <a href="/Account/Login" dideo-checked="true">ورود</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Account/Register" dideo-checked="true">ثبت نام</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Account/ForgotPassword" dideo-checked="true">فراموشی رمز عبور</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-sm-12">
+                            <div class="widget">
+                                <div class="tagcloud text-center-tfs vertical-top">
+                                    <img src="img/mellat.webp" width="60" class="img-responsive" />
+                                    <img src="img/saman.webp" width="60" class="img-responsive samanlogo" />
+                                    <a target="_blank"
+                                        href="https://trustseal.enamad.ir/Verify.aspx?id=10671&amp;p=TohIK4RzPr6FsBMk"
+                                        dideo-checked="true">
+                                        <img src="img/namad-logo.png" alt="نماد اعتماد الکترونیکی" /></a>
+                                    <a target="_blank"
+                                        href="https://ecunion.ir/verify/tfshops.com?token=15902445acf0232aa459"
+                                        dideo-checked="true"><img src="img/logo-eteh.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
+        <!-- footer bottom  -->
+        <div class="bottom_footer border-top-tran" id="CopyRight">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p class="mb-lg-0 text-center">
+                            تمامی حقوق مادی و معنوی متعلق به
+                            <a href="/" dideo-checked="true" class="color-web"> © تهران فرم </a> می باشد.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="footer_payment text-center text-lg-right d-flex">
+                            <li>
+                                <a href="#" dideo-checked="true"><img src="img/shetab.webp" alt="shetab" /></a>
+                            </li>
+                            <li>
+                                <a href="#" dideo-checked="true"><img src="img/mettal.webp" alt="mellat" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- footer bottom  -->
-    <div class="bottom_footer border-top-tran" id="CopyRight">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <p class="mb-lg-0 text-center">
-              تمامی حقوق مادی و معنوی متعلق به
-              <a href="/" dideo-checked="true" class="color-web"> © تهران فرم </a> می باشد.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <ul class="footer_payment text-center text-lg-right d-flex">
-              <li>
-                <a href="#" dideo-checked="true"><img src="img/shetab.webp" alt="shetab" /></a>
-              </li>
-              <li>
-                <a href="#" dideo-checked="true"><img src="img/mettal.webp" alt="mellat" /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="clickVisible">
+        <!-- <div class="clickVisible">
             Lorem
         </div>
         <div class="visibleit" style="visibility: hidden;">
@@ -2041,57 +2037,151 @@
             ex, consequatur quaerat laborum atque omnis reprehenderit ad! Nulla, rem vel exercitationem rerum maiores
             corrupti?
         </div> -->
-  </footer>
-  <!-- end footer  -->
+    </footer>
+    <!-- end footer  -->
 
-   <!--  modal search -->
+    <!--  modal search -->
 
-   <div class="modal-fother m4">
-    <div class="modal-child m3 modal-size-main2" onclick="event.stopPropagation()">
-        <div class="modal-form">
-            <div class="">
+    <div class="modal-fother m4">
+        <div class="modal-child m3 modal-size-main2" onclick="event.stopPropagation()">
+            <div class="modal-form">
+                <div class="">
 
-                <div class="close4  text-left  ">
-                    <span class="fa fa-arrow-left effect "
-                        onclick="openNav('.m3', '.m4', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"></span>
+                    <div class="close4  text-left  ">
+                        <span class="fa fa-arrow-left effect "
+                            onclick="openNav('.m3', '.m4', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"></span>
+                    </div>
+
+                    <p class="font5 mb-3">نمایش نتایج برای :</p>
+
+                    <!-- search box -->
+                    <div class="searchInp2 mb-4">
+                        <span> <i class="fa fa-search"></i> </span>
+                        <input type="text" spellcheck="false" class="noneBorderOut inpRem1" name=""
+                            placeholder="جستجو..." id="" />
+                    </div>
+                    <!-- product resualt  -->
+                    <div class="flex flex-nowrap overflow1  noSelect  slidejs1 " data-slide="0">
+
+                        <div class="item-slider8">
+                            <img src="img/leand/download.png" alt="">
+                            <h2 class="titr-text">محصول مورد نظر را جستجو کنید:</h2>
+                        </div>
+
+                        <div class="item-slider8">
+                            <img src="img/leand/download (1).png" alt="">
+                            <h2 class="titr-text">محصول مورد نظر یافت نشد:</h2>
+                        </div>
+
+                        <!-- item  -->
+                        <div class="item-slider8">
+                            <img src="img/img-bootom/a2.jpg" alt="">
+                            <h2 class="titr-text"><a href="">جا شمعی</a></h2>
+                        </div>
+
+
+
+                    </div>
                 </div>
+            </div>
 
-                <p class="font5 mb-3">نمایش نتایج برای :</p>
+        </div>
+    </div>
 
-                <!-- search box -->
-                <div class="searchInp2 mb-4">
-                    <span> <i class="fa fa-search"></i> </span>
-                    <input type="text" spellcheck="false" class="noneBorderOut inpRem1" name=""
-                        placeholder="جستجو..." id="" />
-                </div>
-                <!-- product resualt  -->
-                <div class="flex flex-nowrap overflow1  noSelect  slidejs1 " data-slide="0">
+    <!-- modal basket  -->
+    <div class="modal-fother m20">
+        <div class="modal-child m21 modal-size-main" onclick="event.stopPropagation()">
+            <div class="modal-form">
+                <div class=" boxShadow p-1">
 
-                    <div class="item-slider8">
-                        <img src="img/leand/download.png" alt="">
-                        <h2 class="titr-text">محصول مورد نظر را جستجو کنید:</h2>
+                    <div class="close4  text-left  m-3">
+                        <span class="fa fa-arrow-left effect "
+                            onclick="openNav('.m21', '.m20', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"></span>
                     </div>
 
-                    <div class="item-slider8">
-                        <img src="img/leand/download (1).png" alt="">
-                        <h2 class="titr-text">محصول مورد نظر یافت نشد:</h2>
+                    <!-- basket  -->
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="font4 mb-3">
+                                سبد خرید
+                                ( کالا: <span>1</span> عدد )
+                            </div>
+                            <hr>
+                            <div>
+                                <!-- product basket  -->
+                                <ul class="addRow">
+                                    <li>
+                                        <div class="col-12 col-sm-4 col-lg-3 ">
+                                            <img src="img/img-bootom/s2/a5.jpg" alt="" class="img-respansive">
+                                        </div>
+
+                                        <div class="col-12 col-sm-7 p-0">
+                                            <p class="fontS2">انبر پرس سرسیم به همراه کانکتور کنیپکس مدل
+                                                979021
+                                            </p>
+
+                                            <p class="fontS1">
+                                                تعداد :
+                                                <span>1</span>
+                                                عدد
+                                            </p>
+                                            <p>
+                                                <span class=" price1">417,000 </span> <label
+                                                    class="toman1">تومان</label>
+
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-sm-1 iconBasket">
+                                            <span class="fa fa-trash effect"></span>
+                                        </div>
+                                        <div class="col-12">
+                                            <hr>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <!-- Resualt Product  -->
+                                <div class="row">
+                                    <div class="col-12 d-flex-between align-items-center p-0 p-sm-1  ">
+                                        <div class="p-0 m-0">
+                                            جمع سبد :
+                                        </div>
+                                        <div>
+                                            <p class="p-0 m-0">
+                                                <span class="price ">417,000 </span> <label class="toman">تومان</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
                     </div>
-
-                    <!-- item  -->
-                    <div class="item-slider8">
-                        <img src="img/img-bootom/a2.jpg" alt="">
-                        <h2 class="titr-text"><a href="">جا شمعی</a></h2>
+                    <hr>
+                    <!-- button basket   -->
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-end  mb-2 mt-2 ">
+                            <div class="p-0 m-1">
+                                <button class="btn effect  btnBasket ">
+                                    سبد خرید
+                                </button>
+                            </div>
+                            <div class="p-0 m-1 ml-0">
+                                <button class="btn effect coBack text-white ">
+                                    تکمیل سفارش
+                                </button>
+                            </div>
+                        </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
 
     </div>
-</div>
-
 
     <!-- js link -->
     <script src="js/Header.js"></script>
