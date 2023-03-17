@@ -47,6 +47,13 @@ label {
     transform: rotateY(2000deg)
 }
 
+.borderBox{
+    border: 1px solid #c0c3c7;
+}
+
+.mb-6{
+    margin-top: 60px;
+}
 :root {
     --color1: #ff8a00;
     --color2: gray;
