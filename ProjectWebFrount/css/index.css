@@ -48,9 +48,25 @@ label {
 }
 
 .borderBox{
-    border: 1px solid #c0c3c7;
+    border: 1px solid #a19da49e;
 }
 
+.gray-color *{
+    color: #777 !important;
+}
+
+.mhr{
+    margin: 10px 0;
+    padding: 0;
+}
+.img-basket{
+    text-align: center;
+    margin-top: 20px 0;
+
+}
+.img-basket img{
+    width: 200px;
+}
 .mb-6{
     margin-top: 60px;
 }
@@ -1295,7 +1311,7 @@ a {
 }
 
 .iconBasket span{
-    font-size: 2rem !important;
+    font-size: 2rem ;
     color: var(--color5Price) !important;
     cursor: pointer;
 
@@ -2520,15 +2536,23 @@ p {
 .fontS4 {
     font-size: 1.1rem;
 }
-
+@media screen and (max-width:530px){
+    .fontS4 {
+        font-size: 0.9rem;
+    }
+}
 .fontS5 {
     font-size: 1.3rem;
 }
-
-.fontS6 {
-    font-size: 1.5rem;
+.mb-nav{
+    margin-bottom:100px ;
 }
-
+.fontS6 {
+    font-size: 1.5rem !important;
+}
+.fontS7 {
+    font-size: 2rem !important;
+}
 .bold {
     font-weight: bolder !important;
     color: #000;
@@ -2907,6 +2931,9 @@ p {
 }
 
 
+.basket-bg{
+    background: #fcfcfc;
+}
 /**************************** End main*/
 
 
