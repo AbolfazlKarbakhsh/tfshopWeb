@@ -15,7 +15,7 @@
 
 </head>
 
-<body >
+<body>
     <div class='box'>
         <div class='box-form'>
             <div class='box-login-tab'></div>
@@ -23,25 +23,34 @@
                 <div class='i i-login'></div>
                 <h2>ورود کاربر</h2>
             </div>
+            
+            <!-- <form action=""> -->
             <div class='box-login' dir="">
                 <div class='fieldset-body' id='login_form'>
-            
-                    <p class='field'>
-                        <label for='number'>شماره تلفن:</label>
-                        <input type='text' id='number' name='number' title='شماره تلفن خود را وارد کنید' />
-                    </p>
-                    <p class='field d-none Confirm'>
-                        <label  for='confirm'>کد تایید:</label>
-                        <input  type='text' id='confirm' name='confirm' title='کد تایید خود را وارد کنید' />
-                    </p>
 
-                    <label class='checkbox'>
-                        مرا به خاطر بسپار
-                        <input type='checkbox' value='TRUE' title='مرا به خاطر بسپار' />   
-                    </label>
+                        <p class='field'>
+                            <label for='number'>شماره تلفن:</label>
+                            <input type='text' id='number' name='number' title='شماره تلفن خود را وارد کنید' />
+                        </p>
+                        <p class='field d-none Confirm'>
+                            <label for='confirm'>کد تایید:</label>
+                            <input type='text' id='confirm' name='confirm' title='کد تایید خود را وارد کنید' />
+                        </p>
 
-                    <input type='submit' id='do_login' value='دریافت کد تایید' title=' دریافت کد تایید ' />
+                        <label class='checkbox'>
+                            مرا به خاطر بسپار
+                            <input type='checkbox' value='TRUE' title='مرا به خاطر بسپار' />
+                        </label>
+
+                        <p class='field pTimer d-none' id="confirmTimer">
+                            <label>زمان برای ارسال مجدد : <span id="timer"></span></label>
+                        </p>
+
+                        <input type='submit' src="LandingPage.html" id='do_login' value='دریافت کد تایید'
+                            title=' دریافت کد تایید ' />
                 </div>
+
+                </form>
             </div>
         </div>
 
@@ -49,7 +58,7 @@
 
 
     <div class='icon-credits text-black'>
-        تمامی حقوق مادی و معنوی متعلق به ©  کرمان وب می باشد
+        تمامی حقوق مادی و معنوی متعلق به © کرمان وب می باشد
     </div>
 
 
