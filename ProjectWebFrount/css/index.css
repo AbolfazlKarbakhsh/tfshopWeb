@@ -1135,13 +1135,14 @@ a {
 }
 
 .item-slider {
-    width: 18.5%;
+    width: 25%;
     /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
     box-shadow: 0 0 7px rgb(0 0 0 / 10%);
     text-align: right;
     padding: 5px !important;
     height: 90%;
     margin-bottom: 10px;
+    margin-right:10px ;
     position: relative;
 }
 
@@ -1548,7 +1549,7 @@ a {
     border: 1px solid #dedede;
     margin: 0 0 10px;
     border-radius: 8px;
-    padding: 15px 10px;
+    padding: 15px 5px;
     text-align: right;
 }
 
@@ -1582,7 +1583,7 @@ a {
     letter-spacing: .2px;
     font-weight: 700;
     font-size: 14px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.571;
     padding: 8px 10px 10px 12px;
     border-bottom: 1px solid #f2f2f2;
@@ -1597,7 +1598,8 @@ a {
 }
 
 .widget-title {
-    font-size: 1em;
+    margin: 20px 0;
+    font-size: 0.9em;
 }
 
 .sidebar-widget-body ul {
@@ -1632,6 +1634,10 @@ a {
 .sidebar-widget-body ul li {
     margin: 5px 10px;
 }
+.sidebar-widget-body ul li ul li{
+    margin-right: 30px;
+}
+
 
 
 /* slider main 2 */
