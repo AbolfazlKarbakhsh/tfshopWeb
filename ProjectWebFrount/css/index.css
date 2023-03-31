@@ -3016,11 +3016,28 @@ p {
 }
 
 .user-item-panel li{
-    margin-right: 19px;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     padding: 10px 0;
     font-size: 0.9rem;
     color: #3a3a3a;
+    border-bottom: 1px solid #dee2e6 !important
+}
+.user-item-panel li:hover{
+    color: var(--color1);
+    cursor: pointer;
+}
+.user-item-panel li span{
+    margin-right: 10px ;
+    color: #f48703;
+
+}
+.icon-item{
+    font-size: 1.1rem;
+    padding-left: 5px !important;
+}
+.icon-item-sm{
+    font-size: 1.1rem;
+    padding-left: 15px !important;
 }
 /**************************** End main*/
 
